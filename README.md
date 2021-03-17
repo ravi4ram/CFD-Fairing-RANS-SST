@@ -58,7 +58,7 @@ If you have multi-core processor, then MPI version speeds up the computation. Yo
 > Generate mesh   
 > 
 * Verify and install required modules    
-* run `python payload_fairing.py`.    
+* run `python trans_(p/g)slv_structured.py`.    
 
 > Single CPU mode:   
 > 
