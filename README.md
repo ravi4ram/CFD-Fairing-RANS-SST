@@ -1,5 +1,5 @@
 # CFD Flow Simulation of 2D PSLV and GSLV MK-III Fairing (RANS-SST)
-> Flow simulation over pslv and gslv-mk3 fairings using SU2 solver using structured mesh with RANS-SST combination.   
+> Flow simulation over pslv and gslv-mk3 fairings using SU2 solver on a structured mesh with RANS-SST combination.   
    
 
 ## Table of contents
