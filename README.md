@@ -1,6 +1,8 @@
 # CFD Flow Simulation of 2D PSLV and GSLV MK-III Fairing (RANS-SST)
 > Flow simulation over pslv and gslv-mk3 fairings using SU2 solver using structured mesh with RANS-SST combination.   
    
+&nbsp;    
+#### Update (27-DEC-22) : Config file updated for SU2 (Version-7.4.0)  
 
 ## Table of contents
 * [General info](#general-info)
@@ -44,7 +46,7 @@ Simulated payload fairing
 Tested the code on Linux based setup.    
 >   
 1. Gmsh (Version-4.7.1) with python module - Mesh generation
-2. SU2 (Version-7.1.0) - CFD solver 
+2. SU2 (Version-7.4.0) - CFD solver 
 3. Paraview (Version-5.7.0) - flow visualization  
 
 &nbsp;    
@@ -62,18 +64,18 @@ If you have multi-core processor, then MPI version speeds up the computation. Yo
 
 > Single CPU mode:   
 > 
-* Execute `SU2_CFD turb_SA_gslv_fairing.cfg` on terminal.    
+* Execute `SU2_CFD turb_SST_gslv.cfg` on terminal.    
 * Open flow.vtu file through Paraview.    
 
 > Parallel computation mode:   
 > 
-* Execute `mpirun -n 2 SU2_CFD turb_SA_gslv_fairing.cfg` on terminal. (2-cores will be used)   
+* Execute `mpirun -n 2 SU2_CFD turb_SST_gslv.cfg` on terminal. (2-cores will be used)   
 * Open flow.vtu file through Paraview.  
 
-To execute PSLV, choose the turb_SA_pslv_fairing.cfg file in the command  
+To execute PSLV, choose the turb_SST_pslv.cfg file in the command  
 
 ## Updates   
-* 
+* [27-DEC-22] Config file updated for SU2 (Version-7.4.0)
 
 ## To-do list
 * SSLV
